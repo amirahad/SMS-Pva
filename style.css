@@ -1,6 +1,9 @@
 body{
     background-image: url(img/bg.png);
 }
+.dropdown-toggle::after {
+    content: none;
+}
 .navbar > ul > li:hover {
     background: #39a7e7;
 }
@@ -17,24 +20,28 @@ body{
     height: 39px;
     min-width: 50px;
 }
-#navbarNav li{
+#navbarSupportedContent li{
     padding: 5px 5px;
 }
-#navbarNav li a{
+#navbarSupportedContent li a{
     font-size: 14px;
     font-weight: bold;
     margin: 0 10px;
     color: #484847;
     text-decoration: none;
 }
-#navbarNav li:hover{
+#navbarSupportedContent li:hover{
     background-color: #39A7E7;
     cursor: pointer;   
 }
-#navbarNav li:hover a{
+#navbarSupportedContent li:hover a{
     color: white;
-}
-
+} 
+.balance{
+    color: #39a7e7;
+    font-size: 18px;
+    font-weight: bold;
+} 
 .button{
     position: fixed;
     bottom: 0;
@@ -100,7 +107,7 @@ body{
 
 @media only screen and (max-width: 768px) {
     #navbarNav li a{
-        margin: 10px 0 0 60px;
+        margin: 5px 0 ;
     }
     .countryName{
         font-size: 10px;
